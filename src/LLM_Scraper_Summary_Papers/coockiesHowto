@@ -1,0 +1,43 @@
+    s2 = "https://fingerprint.com/products/bot-detection/"
+
+ cookiesString = """
+        AMCVS_4D6368F454EC41940A4C98A6%40AdobeOrg	1	.sciencedirect.com	/	Session
+    AMCV_4D6368F454EC41940A4C98A6%40AdobeOrg	179643557%7CMCIDTS%7C20174%7CMCMID%7C52289989194611626024154353191557613294%7CMCAID%7CNONE%7CMCOPTOUT-1743102620s%7CNONE%7CMCAAMLH-1743700220%7C6%7CMCAAMB-1743700220%7Cj8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI%7CMCCIDH%7C-1660478464%7CvVersion%7C5.5.0	.sciencedirect.com	/	2026-05-01T17:10:20.024Z
+    EUID	8eee007d-e399-4d27-a071-6e93db991587	.sciencedirect.com	/	2025-09-26T13:54:04.515Z
+    MIAMISESSION	ed276d69-da84-4dbe-9100-261376f318b7:3920548226	.sciencedirect.com	/	Session
+    OptanonAlertBoxClosed	2025-03-26T13:54:09.056Z	.sciencedirect.com	/	2026-03-26T13:54:09.000Z
+    OptanonConsent	isGpcEnabled=0&datestamp=Thu+Mar+27+2025+19%3A10%3A19+GMT%2B0200+(Eastern+European+Standard+Time)&version=202411.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=c0e64a7c-7900-461d-9fb2-728c3e52d78a&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=1%3A1%2C3%3A1%2C2%3A1%2C4%3A1&intType=1&geolocation=RO%3BB&AwaitingReconsent=false	.sciencedirect.com	/	2026-03-27T17:10:19.000Z
+    __cf_bm	h9dhmm5YbCcn7.cU44J3YyiMJtwzslFPpCtKLIeMYQA-1743099738-1.0.1.1-gwykQy4pbNXaIEbPI8xIrD0.S6scDRr0TmYrSucWN4I1URXnhlJcTlyS30uKn9GvXnMpqNL0ppOoMv8ET1kQjgofuP51N01h2lI2TAbhDnk	.sciencedirectassets.com	/	2025-03-27T18:52:18.555Z
+    acw	a3582bc151220847f43aea784479b61993d0gxrqb%7C%24%7C8E4BC6D811973B5393FC011B658F65D5B60579B993B025F13E75F1AD02C152B1C741CAC570BB9F15B4AF366C7062A78C4E247328AD4C6D380E9169905BBD791CB0469A67597464825D387A21AFA2E514	.sciencedirect.com	/	Session
+    cf_clearance	MYJobgjCckVvU_gUUo2NQ8YB9HwZ.2RjDihKg8zgdHw-1743095417-1.2.1.1-z0UOFthLqvcnsPnwgMzcKz18rPdJx8TA4PdIZD1OHEEVg5ndJKrwmuh1uu_ulNL3OoGTtvmzcWAkrNjSw9ImG75z4xaM3UA8ulA4JIGhDVKjU_91xZAjF4edEDOtNZj8OwVE_ONhvZArSau9LuvBXQDrPma1.62zzidMW0mjvlzCQruiR_uOrpKzpr7bhbkTot8SsaATCNXmZ3PQvizouM1y7oJiU6yCzAPrxVnufLnOwck6TqykheDfLYxSVKsDMkMVg7fFEVZKy_5tvyR9UALmIJL0dGHy3xHbU9B.QoyBc0TXYrj0kw2fvEjtJpy_q9QzCr3fHv6bP01TCjuiO0sUkChrNPrhU83y4v54BBc	.sciencedirect.com	/	2026-03-27T17:10:19.836Z
+    id_ab	AEG	.sciencedirect.com	/	2026-05-01T17:10:29.319Z
+    s_pers	%20v8%3D1743095420088%7C1837703420088%3B%20v8_s%3DLess%2520than%25207%2520days%7C1743097220088%3B%20c19%3Dsd%253Asearch%253Aresults%253Aguest%7C1743097220089%3B%20v68%3D1743095420084%7C1743097220093%3B	.sciencedirect.com	/	2026-05-01T17:10:20.093Z
+    s_sess	%20s_cpc%3D0%3B%20e78%3Dqs%253Dtuberculosis%3B%20s_sq%3D%3B%20s_cc%3Dtrue%3B%20s_ppvl%3Dsd%25253Aproduct%25253Ajournal%25253Aarticle%252C41%252C17%252C2406%252C1912%252C962%252C1920%252C1080%252C1%252CP%3B%20c21%3Dqs%253Dtuberculosis%2526date%253D2024-2025%3B%20e13%3Dqs%253Dtuberculosis%2526date%253D2024-2025%253A1%3B%20c13%3Drelevance-desc%3B%20e41%3D1%3B%20s_ppv%3Dsd%25253Asearch%25253Aresults%25253Aguest%252C22%252C22%252C962%252C1361%252C962%252C1920%252C1080%252C1%252CP%3B	.sciencedirect.com	/	Session
+    sd_session_id	a3582bc151220847f43aea784479b61993d0gxrqb	.sciencedirect.com	/	Session
+    search_traffic	%7B%227%22%3A95%7D	www.sciencedirect.com	/search	2025-05-26T17:10:29.319Z
+        """
+    cookiesString = cookiesString.replace("\n", "\t")
+    cookiesString = cookiesString.replace(" ", "")
+    m = cookiesString.split("\t")
+    m.pop(0)
+    m.pop(70)
+    cookies = []
+    for i in range(14):
+        cookie = {}
+        cookie["name"] = m[i * 5]
+        cookie["value"] = m[i * 5 + 1]
+        cookie["domain"] = m[i * 5 + 2]
+        cookie["path"] = m[i * 5 + 3]
+        cookie["expires"] = int(time.time()) + 3600
+        cookies.append(cookie)
+    m3 = {
+        "name": "OptanonConsent",
+        "value": "isGpcEnabled=0&datestamp=Wed+Mar+26+2025+20%3A56%3A34+GMT%2B0200+(Eastern+European+Standard+Time)&version=202411.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=f704a20d-01c2-4746-a7e5-18a20cef3c7c&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=1%3A1%2C3%3A1%2C2%3A1%2C4%3A1&intType=1&geolocation=RO%3BB&AwaitingReconsent=false",
+        "domain": "sciencedirect.com",
+        "path": "/",
+        "expires": int(time.time()) + 3600
+
+    }
+    await context.add_cookies(
+        cookies
+    )

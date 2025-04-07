@@ -1,0 +1,32 @@
+[project]
+name = "LLM_Scraper_Summary_Papers"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Gabriel",email = "gabriel.agapie@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<4.0"
+dependencies = [
+    "playwright (>=1.51.0,<2.0.0)",
+    "html2text (>=2024.2.26,<2025.0.0)",
+    "langchain-openai (>=0.3.10,<0.4.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "beautifulsoup4 (>=4.13.3,<5.0.0)",
+    "lxml (>=5.3.1,<6.0.0)",
+    "markdown (>=3.7,<4.0)",
+    "dotenv (>=0.9.9,<0.10.0)",
+    "langchain-groq (>=0.3.1,<0.4.0)",
+    "streamlit (>=1.44.0,<2.0.0)"
+]
+
+[tool.poetry.scripts]
+agentic_chat_papers= "LLM_Scraper_Summary_Papers.app:runMain"
+
+[tool.poetry]
+packages = [{include = "LLM_Scraper_Summary_Papers", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
